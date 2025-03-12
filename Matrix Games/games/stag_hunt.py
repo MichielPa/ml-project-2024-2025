@@ -1,9 +1,9 @@
 import numpy as np
-from game import BiMatrixGame
+from .game import SymmetricBiMatrixGame
 
-class StagHunt(BiMatrixGame):
+class StagHunt(SymmetricBiMatrixGame):
      
     def __init__(self):
-        super().__init__(np.ndarray([[1, 0],[2/3, 2/3]]), np.ndarray([[1, 2/3],[0, 2/3]]), ["S", "H"])
+        super().__init__(np.array([[1, 0],[2/3, 2/3]]), "Stag Hunt",["S", "H"])
         
     
