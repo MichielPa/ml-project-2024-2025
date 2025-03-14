@@ -1,5 +1,5 @@
 
-from .game import *
+from .game import BiMatrixGame, SymmetricBiMatrixGame
 from .stag_hunt import StagHunt
 from .subsidy_game import SubsidyGame
 from .matching_pennies import MatchingPennies
