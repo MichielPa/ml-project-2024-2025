@@ -62,6 +62,15 @@ class BiMatrixGame:
         if show_plot:
             fig.show()
     
+    def getReward(self, action1: str, action2: str):
+        
+        assert action1 in self.action_names, "Action 1 should be a valid action."
+        assert action2 in self.action_names, "Action 2 should be a valid action."
+        
+        i = self.action_names.index(action1)
+        j = self.action_names.index(action2)
+            
+        return self.player1_rewards[i, j], self.player2_rewards[j, i]
 
 class SymmetricBiMatrixGame(BiMatrixGame):
     
